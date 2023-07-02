@@ -84,6 +84,7 @@ SENSORS: tuple[SmartEVSESensorEntityDescription, ...] = (
     SmartEVSESensorEntityDescription(
         key="smartevse_car_connected",
         name="SmartEVSE Car Connected",
+        device_class=SensorDeviceClass.PLUG,
     ),
     SmartEVSESensorEntityDescription(
         key="smartevse_wifi_status",
